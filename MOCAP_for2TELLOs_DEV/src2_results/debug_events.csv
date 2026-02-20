@@ -1,0 +1,651 @@
+timestamp,event_type,subject,data
+1763958059.5834188,system,program_start,"{'mode': 'full', 'mocap': True, 'drones': True}"
+1763958059.5848553,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958059.584301, 'connected': True, 'packets': 24, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958060.5861433,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958060.5857847, 'connected': True, 'packets': 266, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958061.5881085,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958061.5877204, 'connected': True, 'packets': 506, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958062.5898304,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958062.5895977, 'connected': True, 'packets': 746, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958063.591445,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958063.5911655, 'connected': True, 'packets': 986, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958064.5921452,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958064.591864, 'connected': True, 'packets': 1226, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958065.5940955,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958065.593477, 'connected': True, 'packets': 1466, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958066.5954986,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958066.5953524, 'connected': True, 'packets': 1708, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958067.5969555,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958067.596764, 'connected': True, 'packets': 1948, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958068.5978036,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958068.5975962, 'connected': True, 'packets': 2188, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958069.599347,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958069.5990887, 'connected': True, 'packets': 2428, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958070.6009629,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958070.6007245, 'connected': True, 'packets': 2668, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958071.602404,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958071.6022825, 'connected': True, 'packets': 2908, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958072.607121,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958072.6041899, 'connected': True, 'packets': 3150, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958073.608786,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958073.6085558, 'connected': True, 'packets': 3390, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958074.609851,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958074.6096141, 'connected': True, 'packets': 3630, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958075.611294,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958075.611152, 'connected': True, 'packets': 3872, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958076.612762,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958076.6125927, 'connected': True, 'packets': 4112, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958077.613801,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958077.6136148, 'connected': True, 'packets': 4352, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958078.6154516,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958078.6152115, 'connected': True, 'packets': 4592, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958079.6171098,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958079.6168733, 'connected': True, 'packets': 4832, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958080.6181223,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958080.6180062, 'connected': True, 'packets': 5072, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958081.619616,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958081.619374, 'connected': True, 'packets': 5314, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958082.6212456,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958082.6209934, 'connected': True, 'packets': 5554, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958083.6219947,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958083.6217299, 'connected': True, 'packets': 5794, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958084.6237948,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958084.6235173, 'connected': True, 'packets': 6034, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958085.6255643,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958085.6252058, 'connected': True, 'packets': 6274, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958086.6268978,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958086.626264, 'connected': True, 'packets': 6514, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958087.6285822,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958087.6282983, 'connected': True, 'packets': 6756, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958088.630096,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958088.6297405, 'connected': True, 'packets': 6996, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958089.631623,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958089.6314628, 'connected': True, 'packets': 7236, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958090.63303,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958090.6328597, 'connected': True, 'packets': 7476, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958091.6338096,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958091.633614, 'connected': True, 'packets': 7716, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958092.635352,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958092.6351283, 'connected': True, 'packets': 7958, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958093.6369684,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958093.6367054, 'connected': True, 'packets': 8198, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958094.6378977,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958094.6376438, 'connected': True, 'packets': 8438, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958095.6396089,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958095.6393504, 'connected': True, 'packets': 8678, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958096.6412444,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958096.6410048, 'connected': True, 'packets': 8918, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958097.6419244,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958097.6416574, 'connected': True, 'packets': 9158, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958098.6435456,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958098.64324, 'connected': True, 'packets': 9400, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958099.645099,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958099.6448402, 'connected': True, 'packets': 9640, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958100.645925,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958100.6456354, 'connected': True, 'packets': 9880, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958101.6473992,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958101.6472409, 'connected': True, 'packets': 10120, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958102.648815,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958102.648634, 'connected': True, 'packets': 10360, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958103.6523545,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958103.6521204, 'connected': True, 'packets': 10602, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958104.6540008,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958104.6537557, 'connected': True, 'packets': 10842, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958105.6556182,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958105.6553562, 'connected': True, 'packets': 11082, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958106.657315,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958106.6570003, 'connected': True, 'packets': 11322, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958107.6594603,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958107.6590219, 'connected': True, 'packets': 11564, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958108.6612475,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958108.6609457, 'connected': True, 'packets': 11804, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958109.662615,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958109.6621685, 'connected': True, 'packets': 12044, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958110.6645136,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958110.6642528, 'connected': True, 'packets': 12284, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958111.6661,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958111.6657782, 'connected': True, 'packets': 12524, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958112.6683614,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958112.6680024, 'connected': True, 'packets': 12766, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958113.6700509,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958113.6697967, 'connected': True, 'packets': 13006, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958114.6717873,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958114.6715312, 'connected': True, 'packets': 13246, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958115.6735067,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958115.6731806, 'connected': True, 'packets': 13486, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958116.6753268,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958116.6749697, 'connected': True, 'packets': 13728, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958117.6772978,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958117.6768987, 'connected': True, 'packets': 13968, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958122.6627374,system,program_start,"{'mode': 'full', 'mocap': True, 'drones': True}"
+1763958122.6638868,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958122.663385, 'connected': True, 'packets': 26, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958122.81691,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958122.8166964, 'connected': True, 'packets': 64, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958123.0200498,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958123.0197904, 'connected': True, 'packets': 112, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958123.3230484,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958123.3227458, 'connected': True, 'packets': 184, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958123.5692792,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958123.569031, 'connected': True, 'packets': 244, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958123.6664283,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958123.6655908, 'connected': True, 'packets': 266, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958123.773972,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958123.7737262, 'connected': True, 'packets': 292, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958124.3779604,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958124.3777337, 'connected': True, 'packets': 438, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958124.6680167,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958124.6678264, 'connected': True, 'packets': 508, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958124.6932938,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958124.6931229, 'connected': True, 'packets': 514, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958124.8951962,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958124.8950198, 'connected': True, 'packets': 562, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958125.298742,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958125.298553, 'connected': True, 'packets': 658, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958125.6696777,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958125.6694267, 'connected': True, 'packets': 748, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958125.8079047,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958125.80767, 'connected': True, 'packets': 782, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958125.9821062,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958125.9818625, 'connected': True, 'packets': 822, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958126.185083,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958126.1848574, 'connected': True, 'packets': 872, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958126.387008,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958126.3868783, 'connected': True, 'packets': 920, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958126.6712165,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958126.6709712, 'connected': True, 'packets': 988, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958127.3933892,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958127.3930926, 'connected': True, 'packets': 1162, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958127.6721034,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958127.671869, 'connected': True, 'packets': 1228, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958128.0003536,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958128.0000136, 'connected': True, 'packets': 1308, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958128.5142677,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958128.5139952, 'connected': True, 'packets': 1430, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958128.6733847,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958128.6731858, 'connected': True, 'packets': 1468, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958128.7000983,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958128.6991482, 'connected': True, 'packets': 1474, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958128.9858754,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958128.9857445, 'connected': True, 'packets': 1544, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958129.193973,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958129.1937933, 'connected': True, 'packets': 1594, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958129.3983243,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958129.3980854, 'connected': True, 'packets': 1642, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958129.6009068,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958129.6006956, 'connected': True, 'packets': 1692, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958129.674983,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958129.6741967, 'connected': True, 'packets': 1708, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958129.810353,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958129.8101475, 'connected': True, 'packets': 1742, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958130.009765,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958130.0095646, 'connected': True, 'packets': 1790, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958130.2138352,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958130.2136514, 'connected': True, 'packets': 1838, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958130.4187264,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958130.4184825, 'connected': True, 'packets': 1888, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958130.6219943,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958130.6217146, 'connected': True, 'packets': 1936, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958130.6761057,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958130.6758804, 'connected': True, 'packets': 1950, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958130.8257077,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958130.8255095, 'connected': True, 'packets': 1986, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958131.6300511,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958131.629812, 'connected': True, 'packets': 2178, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958131.6776683,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958131.6774116, 'connected': True, 'packets': 2190, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958131.9819767,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958131.9817424, 'connected': True, 'packets': 2262, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958132.1877034,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958132.1874626, 'connected': True, 'packets': 2312, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958132.4912713,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958132.4911664, 'connected': True, 'packets': 2386, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958132.6205022,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958132.6202252, 'connected': True, 'packets': 2416, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958132.6792157,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958132.6790593, 'connected': True, 'packets': 2430, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958132.903019,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958132.9027758, 'connected': True, 'packets': 2484, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958133.1065927,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958133.1063352, 'connected': True, 'packets': 2532, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958133.3341055,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958133.3338811, 'connected': True, 'packets': 2588, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958133.6801622,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958133.6800482, 'connected': True, 'packets': 2670, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958133.6805727,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958133.6804726, 'connected': True, 'packets': 2670, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958133.8865106,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958133.8862536, 'connected': True, 'packets': 2720, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958134.6816463,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958134.6815603, 'connected': True, 'packets': 2910, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958134.7954702,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958134.795331, 'connected': True, 'packets': 2938, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958135.1982014,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958135.197906, 'connected': True, 'packets': 3034, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958135.4015348,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958135.4011219, 'connected': True, 'packets': 3084, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958135.5215569,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958135.5211716, 'connected': True, 'packets': 3112, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958135.6833515,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958135.6831129, 'connected': True, 'packets': 3152, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958135.724514,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958135.7237968, 'connected': True, 'packets': 3160, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958135.9276729,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958135.9275162, 'connected': True, 'packets': 3210, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958136.0168962,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958136.016682, 'connected': True, 'packets': 3232, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958136.1249108,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958136.1246593, 'connected': True, 'packets': 3258, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958136.325866,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958136.325662, 'connected': True, 'packets': 3306, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958136.488613,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958136.4883552, 'connected': True, 'packets': 3344, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958136.6849396,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958136.684674, 'connected': True, 'packets': 3392, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958136.6922383,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958136.6920264, 'connected': True, 'packets': 3394, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958136.999234,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958136.998746, 'connected': True, 'packets': 3466, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958137.2019634,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958137.2017214, 'connected': True, 'packets': 3516, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958137.406517,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958137.4062734, 'connected': True, 'packets': 3564, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958137.6105492,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958137.6103501, 'connected': True, 'packets': 3614, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958137.6858656,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958137.6856291, 'connected': True, 'packets': 3632, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958137.8138518,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958137.8136623, 'connected': True, 'packets': 3662, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958138.218595,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958138.2183454, 'connected': True, 'packets': 3760, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958138.4290113,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958138.428875, 'connected': True, 'packets': 3810, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958138.6333578,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958138.6331463, 'connected': True, 'packets': 3860, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958138.6874516,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958138.687226, 'connected': True, 'packets': 3872, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958138.835466,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958138.8352344, 'connected': True, 'packets': 3908, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958139.139422,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958139.1385038, 'connected': True, 'packets': 3980, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958139.6891043,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958139.6888723, 'connected': True, 'packets': 4112, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958140.6896448,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958140.6895318, 'connected': True, 'packets': 4352, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958141.6915822,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958141.6908884, 'connected': True, 'packets': 4592, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958142.6931624,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958142.692935, 'connected': True, 'packets': 4834, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958143.6484563,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958143.6482928, 'connected': True, 'packets': 5062, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958143.6938574,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958143.6936333, 'connected': True, 'packets': 5074, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958144.0369773,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958144.0367641, 'connected': True, 'packets': 5156, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958144.6455235,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958144.6451492, 'connected': True, 'packets': 5302, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958144.6953497,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958144.6951594, 'connected': True, 'packets': 5314, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958145.4584045,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958145.4581642, 'connected': True, 'packets': 5498, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958145.6968336,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958145.6966457, 'connected': True, 'packets': 5554, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958146.6981711,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958146.697799, 'connected': True, 'packets': 5794, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958147.366078,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958147.365938, 'connected': True, 'packets': 5956, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958147.7004907,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958147.7003286, 'connected': True, 'packets': 6036, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958147.749189,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958147.7490149, 'connected': True, 'packets': 6048, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958148.1529603,m_key_ignored,reason=already_in_manual,
+1763958148.153103,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958148.1530075, 'connected': True, 'packets': 6144, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958148.7020237,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958148.7017872, 'connected': True, 'packets': 6276, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958149.0652666,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958149.0651257, 'connected': True, 'packets': 6364, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958149.703581,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958149.703343, 'connected': True, 'packets': 6516, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958150.705237,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958150.704934, 'connected': True, 'packets': 6756, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958151.7075405,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958151.706743, 'connected': True, 'packets': 6996, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958152.7091887,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958152.7089405, 'connected': True, 'packets': 7238, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958153.7109191,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958153.710617, 'connected': True, 'packets': 7478, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958154.7126184,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958154.7123728, 'connected': True, 'packets': 7718, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958155.7141573,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958155.7140052, 'connected': True, 'packets': 7958, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958156.71556,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958156.715396, 'connected': True, 'packets': 8200, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958157.7170906,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958157.7168837, 'connected': True, 'packets': 8440, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958158.7186255,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958158.7184174, 'connected': True, 'packets': 8680, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958158.9187453,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958158.9184306, 'connected': True, 'packets': 8728, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958159.2311733,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958159.2309105, 'connected': True, 'packets': 8802, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958159.5550969,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958159.554731, 'connected': True, 'packets': 8880, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958159.7203019,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958159.7200696, 'connected': True, 'packets': 8920, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958160.0901816,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958160.089922, 'connected': True, 'packets': 9008, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958160.721969,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958160.7217205, 'connected': True, 'packets': 9160, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958161.2038133,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958161.2035792, 'connected': True, 'packets': 9276, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958161.7264254,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958161.726122, 'connected': True, 'packets': 9402, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958162.7283077,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958162.727999, 'connected': True, 'packets': 9642, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958163.7301419,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958163.729833, 'connected': True, 'packets': 9882, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958164.7319624,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958164.7316604, 'connected': True, 'packets': 10124, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958165.7335901,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958165.7333906, 'connected': True, 'packets': 10364, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958166.735084,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958166.734872, 'connected': True, 'packets': 10604, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958167.7367678,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958167.736526, 'connected': True, 'packets': 10844, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958168.737966,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958168.7377305, 'connected': True, 'packets': 11084, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958169.7433274,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958169.743054, 'connected': True, 'packets': 11326, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958170.492373,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958170.492132, 'connected': True, 'packets': 11506, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958170.7448313,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958170.7446232, 'connected': True, 'packets': 11566, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958170.7655964,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958170.7653732, 'connected': True, 'packets': 11572, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958171.269736,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958171.269501, 'connected': True, 'packets': 11692, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958171.7458193,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958171.745603, 'connected': True, 'packets': 11806, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958172.7474167,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958172.747232, 'connected': True, 'packets': 12048, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958173.7488332,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958173.7486644, 'connected': True, 'packets': 12288, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958174.7497902,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958174.7496107, 'connected': True, 'packets': 12528, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958175.751292,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958175.7510855, 'connected': True, 'packets': 12768, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958176.7528574,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958176.7526264, 'connected': True, 'packets': 13008, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958177.754654,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958177.754412, 'connected': True, 'packets': 13248, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958178.7563622,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958178.7561133, 'connected': True, 'packets': 13490, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958179.757937,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958179.7576709, 'connected': True, 'packets': 13730, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958179.9398372,m_key_ignored,reason=already_in_manual,
+1763958179.9400861,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958179.9399195, 'connected': True, 'packets': 13774, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958180.7595387,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958180.7592978, 'connected': True, 'packets': 13970, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958181.7611232,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958181.7608953, 'connected': True, 'packets': 14210, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958182.7618227,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958182.7616134, 'connected': True, 'packets': 14450, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958183.763484,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958183.763301, 'connected': True, 'packets': 14692, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958184.7650106,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958184.7648215, 'connected': True, 'packets': 14932, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958185.7657661,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958185.7655902, 'connected': True, 'packets': 15172, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958186.7672575,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958186.7670522, 'connected': True, 'packets': 15412, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958187.7689073,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958187.7686636, 'connected': True, 'packets': 15652, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958188.7698305,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958188.7695987, 'connected': True, 'packets': 15892, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958188.8627007,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958188.8625007, 'connected': True, 'packets': 15914, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958285.0036032,system,program_start,"{'mode': 'full', 'mocap': True, 'drones': True}"
+1763958285.0045547,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958285.0042605, 'connected': True, 'packets': 24, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958286.0064118,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958286.006147, 'connected': True, 'packets': 264, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958287.0079825,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958287.0078008, 'connected': True, 'packets': 504, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958288.0095975,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958288.0093043, 'connected': True, 'packets': 746, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958289.0110674,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958289.0108137, 'connected': True, 'packets': 986, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958290.0127413,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958290.0125108, 'connected': True, 'packets': 1226, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958291.0139663,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958291.0137384, 'connected': True, 'packets': 1466, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958292.0146372,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958292.0144193, 'connected': True, 'packets': 1706, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958293.0161846,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958293.016005, 'connected': True, 'packets': 1946, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958293.9537818,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958293.9535959, 'connected': True, 'packets': 2172, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958294.017636,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958294.0174484, 'connected': True, 'packets': 2188, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958294.159438,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958294.159173, 'connected': True, 'packets': 2222, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958294.462952,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958294.4627094, 'connected': True, 'packets': 2294, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958294.6684363,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958294.6682742, 'connected': True, 'packets': 2344, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958294.8764622,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958294.875197, 'connected': True, 'packets': 2392, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958295.0190125,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958295.0188587, 'connected': True, 'packets': 2428, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958296.0204766,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958296.0202718, 'connected': True, 'packets': 2668, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958297.0219488,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958297.0217214, 'connected': True, 'packets': 2908, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958298.0234015,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958298.023305, 'connected': True, 'packets': 3148, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958299.0249436,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958299.024711, 'connected': True, 'packets': 3388, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958300.027137,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958300.0268834, 'connected': True, 'packets': 3630, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958301.0288384,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958301.0285919, 'connected': True, 'packets': 3870, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958302.029853,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958302.0296216, 'connected': True, 'packets': 4110, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958303.0313566,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958303.0311725, 'connected': True, 'packets': 4350, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958303.8931348,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958303.89288, 'connected': True, 'packets': 4558, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958304.032761,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958304.0326235, 'connected': True, 'packets': 4590, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958304.3097847,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958304.3095553, 'connected': True, 'packets': 4658, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958305.0340164,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958305.0338674, 'connected': True, 'packets': 4832, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958306.0355222,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958306.0353432, 'connected': True, 'packets': 5072, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958307.0370126,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958307.0368092, 'connected': True, 'packets': 5312, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958308.0378227,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958308.037621, 'connected': True, 'packets': 5552, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958309.0393934,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958309.0391555, 'connected': True, 'packets': 5792, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958310.041277,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958310.0407434, 'connected': True, 'packets': 6032, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958311.0424795,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958311.042219, 'connected': True, 'packets': 6274, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958312.0440972,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958312.043852, 'connected': True, 'packets': 6514, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958312.9461772,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958312.9459898, 'connected': True, 'packets': 6730, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958313.0456648,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958313.04545, 'connected': True, 'packets': 6754, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958313.5686316,t_key_pressed,current_mode=manual,mocap_connected=True
+1763958313.5687306,mode_changed,manual_to_auto,delay=0.000185
+1763958313.568769,formation_control,enabled,T_mode_activated
+1763958313.5688024,leader_switching,enabled,formation_mode_active
+1763958313.5688744,target_set_fixed,ドローン1,"[0, 1, 0], time=0.000004"
+1763958313.5689237,target_set_fixed,ドローン2,"[0, 1, 1], time=0.000002"
+1763958313.5690594,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958313.5689828, 'connected': True, 'packets': 6880, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958313.569137,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958313.5695946,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958313.7661629,t_key_pressed,current_mode=auto,mocap_connected=True
+1763958313.7663512,mode_changed,manual_to_auto,delay=0.000602
+1763958313.7664266,formation_control,enabled,T_mode_activated
+1763958313.7664893,leader_switching,enabled,formation_mode_active
+1763958313.766596,target_set_fixed,ドローン1,"[0, 1, 0], time=0.000008"
+1763958313.7666368,target_set_fixed,ドローン2,"[0, 1, 1], time=0.000002"
+1763958313.7667482,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958313.7666888, 'connected': True, 'packets': 6928, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958313.7668118,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958313.8674352,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958314.04718,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958314.0469732, 'connected': True, 'packets': 6994, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958314.0533066,t_key_pressed,current_mode=auto,mocap_connected=True
+1763958314.05339,mode_changed,manual_to_auto,delay=0.000155
+1763958314.0534294,formation_control,enabled,T_mode_activated
+1763958314.0534804,leader_switching,enabled,formation_mode_active
+1763958314.0535564,target_set_fixed,ドローン1,"[0, 1, 0], time=0.000005"
+1763958314.0536077,target_set_fixed,ドローン2,"[0, 1, 1], time=0.000002"
+1763958314.0537302,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958314.0536633, 'connected': True, 'packets': 6996, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958314.05381,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958314.1545928,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958314.4610705,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958314.4607437, 'connected': True, 'packets': 7094, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958314.461362,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958314.6627958,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958314.868108,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958314.8679285, 'connected': True, 'packets': 7192, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958314.8682272,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958315.0484955,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958315.0484123, 'connected': True, 'packets': 7234, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958315.069174,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958315.3795059,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958315.3792863, 'connected': True, 'packets': 7314, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958315.379663,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958315.3802183,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958315.7530112,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958315.7527795, 'connected': True, 'packets': 7404, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958315.7531927,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958315.7538319,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958316.0501504,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958316.049591, 'connected': True, 'packets': 7474, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958316.1635966,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958316.163441, 'connected': True, 'packets': 7502, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958316.1637156,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958316.1641426,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958316.3696322,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958316.3694224, 'connected': True, 'packets': 7552, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958316.369806,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958316.4733062,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958316.654475,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958316.654272, 'connected': True, 'packets': 7620, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958316.6546052,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958316.7554991,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958317.0515504,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958317.0513947, 'connected': True, 'packets': 7716, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958317.1780226,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958317.1777978, 'connected': True, 'packets': 7746, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958317.1781955,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958317.3795366,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958317.5916634,leader_switch,新リーダー: 2号機,"{'old_leader': 0, 'new_leader': 1, 'trust_metrics': [0.1598797460796939, 1.0]}"
+1763958317.693078,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958317.6928394, 'connected': True, 'packets': 7868, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958317.6932356,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958317.7942643,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958318.0528934,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958318.052772, 'connected': True, 'packets': 7956, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958318.1528218,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958318.1526084, 'connected': True, 'packets': 7980, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958318.1529152,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958319.0537956,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958319.0535831, 'connected': True, 'packets': 8196, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958320.0553434,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958320.0551076, 'connected': True, 'packets': 8436, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958321.0568812,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958321.056692, 'connected': True, 'packets': 8676, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958322.0578744,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958322.0576844, 'connected': True, 'packets': 8918, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958322.3629262,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958323.0593555,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958323.0591097, 'connected': True, 'packets': 9158, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958324.0610778,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958324.0608315, 'connected': True, 'packets': 9398, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958324.7018745,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958324.7016745, 'connected': True, 'packets': 9552, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958325.0619428,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958325.061678, 'connected': True, 'packets': 9638, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958326.0636692,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958326.0634348, 'connected': True, 'packets': 9878, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958326.620799,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958326.620636, 'connected': True, 'packets': 10012, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958326.8389535,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958326.8387475, 'connected': True, 'packets': 10064, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958327.0081441,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958327.0079746, 'connected': True, 'packets': 10106, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958327.065499,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958327.065221, 'connected': True, 'packets': 10120, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958327.212599,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958327.2123656, 'connected': True, 'packets': 10154, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958327.4340181,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958327.4337847, 'connected': True, 'packets': 10208, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958327.5882494,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958327.5880969, 'connected': True, 'packets': 10244, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958327.8008249,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958327.8005025, 'connected': True, 'packets': 10296, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958328.0364976,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958328.036334, 'connected': True, 'packets': 10352, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958328.0671685,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958328.066865, 'connected': True, 'packets': 10360, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958328.2040665,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958328.2038715, 'connected': True, 'packets': 10392, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958328.4364955,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958328.4362755, 'connected': True, 'packets': 10448, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958925.013649,system,program_start,"{'mode': 'full', 'mocap': True, 'drones': True}"
+1763958925.0194986,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958925.0180387, 'connected': True, 'packets': 24, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958925.1464949,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958925.146306, 'connected': True, 'packets': 56, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958925.3269985,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958925.3268256, 'connected': True, 'packets': 100, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958925.553942,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958925.5535858, 'connected': True, 'packets': 154, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958925.7571905,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958925.756861, 'connected': True, 'packets': 202, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958925.9620647,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958925.9617825, 'connected': True, 'packets': 252, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958926.0214434,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958926.0210795, 'connected': True, 'packets': 266, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958926.1667852,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958926.1665466, 'connected': True, 'packets': 300, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958926.3469265,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958926.34674, 'connected': True, 'packets': 344, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958926.5488937,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958926.5486352, 'connected': True, 'packets': 392, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958926.85714,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958926.856979, 'connected': True, 'packets': 466, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958927.0225677,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958927.0220542, 'connected': True, 'packets': 506, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958927.1593738,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958927.159206, 'connected': True, 'packets': 538, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958927.5616524,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958927.5614505, 'connected': True, 'packets': 636, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958927.6541443,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958927.6539621, 'connected': True, 'packets': 658, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958927.8270164,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958927.8267055, 'connected': True, 'packets': 698, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958928.024436,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958928.0241284, 'connected': True, 'packets': 746, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958928.061543,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958928.061347, 'connected': True, 'packets': 756, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958928.2430787,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958928.2429113, 'connected': True, 'packets': 798, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958928.4643044,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958928.4640825, 'connected': True, 'packets': 852, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958928.6839366,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958928.6836948, 'connected': True, 'packets': 904, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958928.850989,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958928.8507597, 'connected': True, 'packets': 944, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958929.0257437,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958929.0255892, 'connected': True, 'packets': 986, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958929.0533266,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958929.0531037, 'connected': True, 'packets': 994, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958929.2326715,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958929.232182, 'connected': True, 'packets': 1036, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958929.4592776,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958929.4591172, 'connected': True, 'packets': 1090, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958929.6621351,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958929.661926, 'connected': True, 'packets': 1140, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958929.867236,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958929.8670006, 'connected': True, 'packets': 1188, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958929.9479036,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958929.9477792, 'connected': True, 'packets': 1208, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958930.0271804,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958930.0270135, 'connected': True, 'packets': 1226, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958930.1261988,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958930.1260343, 'connected': True, 'packets': 1250, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958930.3546126,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958930.3543987, 'connected': True, 'packets': 1306, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958930.5588758,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958930.558732, 'connected': True, 'packets': 1354, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958930.7622015,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958930.7619712, 'connected': True, 'packets': 1404, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958930.9671783,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958930.9669204, 'connected': True, 'packets': 1452, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958931.0289013,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958931.02871, 'connected': True, 'packets': 1468, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958931.1709204,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958931.1707067, 'connected': True, 'packets': 1502, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958931.3777153,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958931.3774328, 'connected': True, 'packets': 1550, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958932.0298426,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958932.0296242, 'connected': True, 'packets': 1708, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958932.0393379,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958932.039155, 'connected': True, 'packets': 1710, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958932.2437682,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958932.2436008, 'connected': True, 'packets': 1758, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958933.0311377,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958933.0308957, 'connected': True, 'packets': 1948, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958933.7526445,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958933.752384, 'connected': True, 'packets': 2120, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958934.0322676,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958934.0320215, 'connected': True, 'packets': 2188, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958934.8227906,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958934.8226223, 'connected': True, 'packets': 2378, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958935.0271118,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958935.026895, 'connected': True, 'packets': 2426, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958935.0337362,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958935.0335855, 'connected': True, 'packets': 2428, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958936.0349054,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958936.0346568, 'connected': True, 'packets': 2668, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958937.0370162,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958937.036279, 'connected': True, 'packets': 2908, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958938.0379245,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958938.0377011, 'connected': True, 'packets': 3150, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958938.6423633,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958938.6422143, 'connected': True, 'packets': 3294, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958938.9454086,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958938.9452088, 'connected': True, 'packets': 3368, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958939.0394342,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958939.039277, 'connected': True, 'packets': 3390, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958940.0408883,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958940.0406938, 'connected': True, 'packets': 3630, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958941.0419195,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958941.0417035, 'connected': True, 'packets': 3870, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958941.957875,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958941.957638, 'connected': True, 'packets': 4090, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958942.0434058,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958942.0432172, 'connected': True, 'packets': 4110, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958942.1632931,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958942.1619415, 'connected': True, 'packets': 4140, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958943.04488,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958943.0447032, 'connected': True, 'packets': 4352, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958944.0458252,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958944.0455933, 'connected': True, 'packets': 4592, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958945.047408,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958945.0471659, 'connected': True, 'packets': 4832, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958946.0490043,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958946.0487509, 'connected': True, 'packets': 5072, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958947.0498805,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958947.0496283, 'connected': True, 'packets': 5312, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958948.0515225,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958948.051275, 'connected': True, 'packets': 5552, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958948.5806522,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958948.580409, 'connected': True, 'packets': 5680, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958949.0522044,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958949.0519614, 'connected': True, 'packets': 5792, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958949.2982917,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958949.2979712, 'connected': True, 'packets': 5852, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958950.0090845,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958950.0089104, 'connected': True, 'packets': 6022, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958950.0534282,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958950.053189, 'connected': True, 'packets': 6032, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958950.322616,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958950.3224432, 'connected': True, 'packets': 6098, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958950.7279892,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958950.72777, 'connected': True, 'packets': 6194, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958951.055477,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958951.0549867, 'connected': True, 'packets': 6272, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958951.2934945,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958951.2933128, 'connected': True, 'packets': 6330, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958951.600099,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958951.5998635, 'connected': True, 'packets': 6404, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958952.0568955,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958952.0567367, 'connected': True, 'packets': 6514, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958952.8087428,t_key_pressed,current_mode=manual,mocap_connected=True
+1763958952.8088336,mode_changed,manual_to_auto,delay=0.000182
+1763958952.808875,formation_control,enabled,T_mode_activated
+1763958952.8089104,leader_switching,enabled,formation_mode_active
+1763958952.8089833,target_set_fixed,ドローン1,"[0, 1, 0], time=0.000004"
+1763958952.8090332,target_set_fixed,ドローン2,"[0, 1, 1], time=0.000002"
+1763958952.8091516,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958952.809088, 'connected': True, 'packets': 6694, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958952.809236,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958952.8097062,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958953.0579793,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958953.0577335, 'connected': True, 'packets': 6754, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958954.0596776,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958954.059385, 'connected': True, 'packets': 6994, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958954.2428546,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958954.2426593, 'connected': True, 'packets': 7038, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958954.2429924,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958954.2434785,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958954.8141606,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958954.8139257, 'connected': True, 'packets': 7176, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958954.8143694,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958954.8149996,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958955.0616045,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958955.0612047, 'connected': True, 'packets': 7234, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958956.0632777,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958956.0630395, 'connected': True, 'packets': 7476, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958956.1261601,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958956.1259882, 'connected': True, 'packets': 7490, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958956.1262777,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958956.1267364,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958957.052432,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958957.0522015, 'connected': True, 'packets': 7712, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958957.0525765,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958957.053177,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958957.0648866,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958957.0646477, 'connected': True, 'packets': 7716, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958957.4643729,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958957.4641216, 'connected': True, 'packets': 7812, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958957.4645455,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958957.4651623,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958957.871762,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958957.871308, 'connected': True, 'packets': 7908, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958957.8718956,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958957.872361,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958958.065984,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958958.0657418, 'connected': True, 'packets': 7956, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958958.7356153,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958958.7353897, 'connected': True, 'packets': 8116, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958958.7357566,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958958.7363448,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958959.067603,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958959.0673473, 'connected': True, 'packets': 8196, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958960.061397,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958960.0611992, 'connected': True, 'packets': 8434, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958960.0615714,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958960.0623734,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958960.0691326,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958960.0689495, 'connected': True, 'packets': 8436, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958960.4754999,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958960.4753182, 'connected': True, 'packets': 8534, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958960.4756405,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958960.4761136,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958960.7884529,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958960.7882805, 'connected': True, 'packets': 8610, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958960.788535,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958960.7888196,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958961.0698764,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958961.0696354, 'connected': True, 'packets': 8676, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958961.0919127,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958961.0917509, 'connected': True, 'packets': 8682, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958961.092024,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958961.0924337,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958962.0711956,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958962.0710094, 'connected': True, 'packets': 8918, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958962.1995115,target_position_update,all_drones,forward_0.05m
+1763958962.1997457,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958962.1996093, 'connected': True, 'packets': 8948, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958962.1998768,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958962.2004967,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958963.072648,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958963.0724657, 'connected': True, 'packets': 9158, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958963.1742575,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958963.1741054, 'connected': True, 'packets': 9182, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958963.1743507,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958963.1747408,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958963.6992824,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958963.6990454, 'connected': True, 'packets': 9308, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958963.699437,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958963.7000697,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958964.0737493,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958964.073586, 'connected': True, 'packets': 9398, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958964.8650565,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958964.8648195, 'connected': True, 'packets': 9588, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958964.8652153,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958964.8658593,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958965.0750082,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958965.0748339, 'connected': True, 'packets': 9638, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958965.4711556,target_position_update,all_drones,forward_0.05m
+1763958965.4714062,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958965.4712505, 'connected': True, 'packets': 9732, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958965.4720957,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958965.4726937,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958965.9830565,target_position_update,all_drones,forward_0.05m
+1763958965.9832695,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958965.983162, 'connected': True, 'packets': 9856, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958965.9833744,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958965.9840057,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958966.0764825,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958966.0762863, 'connected': True, 'packets': 9878, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958966.2979643,target_position_update,all_drones,forward_0.05m
+1763958966.2981744,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958966.298048, 'connected': True, 'packets': 9932, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958966.2983007,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958966.2989395,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958966.498548,target_position_update,all_drones,forward_0.05m
+1763958966.4988065,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958966.4986556, 'connected': True, 'packets': 9980, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958966.4989483,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958966.600044,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958967.0779243,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958967.0777004, 'connected': True, 'packets': 10118, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958968.0800302,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958968.0797536, 'connected': True, 'packets': 10360, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958968.6177964,target_position_update,all_drones,forward_0.05m
+1763958968.6180167,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958968.617883, 'connected': True, 'packets': 10488, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958968.6181476,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958968.719137,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958969.0261014,target_position_update,all_drones,forward_0.05m
+1763958969.0262628,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958969.0261652, 'connected': True, 'packets': 10586, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958969.0263586,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958969.0816493,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958969.0813792, 'connected': True, 'packets': 10600, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958969.1271803,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958969.4368606,target_position_update,all_drones,forward_0.05m
+1763958969.4371862,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958969.4370108, 'connected': True, 'packets': 10684, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958969.4373195,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958969.5385225,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958969.7424593,target_position_update,all_drones,forward_0.05m
+1763958969.7426114,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958969.74252, 'connected': True, 'packets': 10758, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958969.7426996,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958969.8434176,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958970.0511396,target_position_update,all_drones,forward_0.05m
+1763958970.0513678,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958970.0512455, 'connected': True, 'packets': 10832, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958970.0514793,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958970.0832653,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958970.0830326, 'connected': True, 'packets': 10840, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958970.1524014,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958970.3648942,target_position_update,all_drones,forward_0.05m
+1763958970.3651135,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958970.3649812, 'connected': True, 'packets': 10908, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958970.3653061,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958970.4664268,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958970.6346,target_position_update,all_drones,forward_0.05m
+1763958970.6348095,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958970.634676, 'connected': True, 'packets': 10972, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958970.6349254,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958970.7386694,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958971.0848372,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958971.084596, 'connected': True, 'packets': 11080, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958972.01504,target_position_update,all_drones,forward_0.05m
+1763958972.0152557,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958972.015127, 'connected': True, 'packets': 11304, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958972.01538,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958972.0857997,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958972.085604, 'connected': True, 'packets': 11320, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958972.1164272,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958972.5492342,target_position_update,all_drones,forward_0.05m
+1763958972.5495071,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958972.549344, 'connected': True, 'packets': 11432, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958972.54964,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958972.6506464,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958972.955086,target_position_update,all_drones,forward_0.05m
+1763958972.9551983,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958972.9551315, 'connected': True, 'packets': 11528, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958972.9552643,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958973.0559177,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958973.0873196,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958973.087117, 'connected': True, 'packets': 11560, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958973.5597143,target_position_update,all_drones,forward_0.05m
+1763958973.5598636,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958973.559775, 'connected': True, 'packets': 11674, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958973.5599518,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958973.5604095,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958974.0886931,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958974.0885568, 'connected': True, 'packets': 11800, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958974.2744024,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958974.2742321, 'connected': True, 'packets': 11846, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958974.2747262,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958974.2753143,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958974.5903745,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958974.5902338, 'connected': True, 'packets': 11922, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958974.5905128,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958974.5908985,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958975.049783,fault_mode,enabled,Hardover fault (value=50) on drone 1
+1763958975.0498385,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958975.0498044, 'connected': True, 'packets': 12032, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958975.049874,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958975.050002,fault_control,ドローン1,"{'original': [1.4320106210848091, -6.219562280875047, 6.017995000208148, 0], 'modified': [0, 0, 0, 0], 'is_modified': True, 'drone_index': 0}"
+1763958975.0501251,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958975.050216,fault_control,ドローン2,"{'original': [5.055723298006119, 3.1615765372868, 3.8886580527210026, 0], 'modified': [5.055723298006119, 3.1615765372868, 3.8886580527210026, 0], 'is_modified': False, 'drone_index': 1}"
+1763958975.0897324,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958975.089647, 'connected': True, 'packets': 12042, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958975.5257406,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958975.5255537, 'connected': True, 'packets': 12146, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958975.5258553,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958975.526196,fault_control,ドローン1,"{'original': [3.503286083723691, -7.2650705899899, 4.991630819536665, 0], 'modified': [0, 0, 0, 0], 'is_modified': True, 'drone_index': 0}"
+1763958975.5264533,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958975.5267222,fault_control,ドローン2,"{'original': [5.025347864853326, 3.2192020022855883, 2.9000661957378324, 0], 'modified': [5.025347864853326, 3.2192020022855883, 2.9000661957378324, 0], 'is_modified': False, 'drone_index': 1}"
+1763958975.860711,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958975.8604991, 'connected': True, 'packets': 12226, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958975.8608787,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958975.8612733,fault_control,ドローン1,"{'original': [3.5116387493530175, -9.283113689008498, 6.040325956671661, 0], 'modified': [0, 0, 0, 0], 'is_modified': True, 'drone_index': 0}"
+1763958975.8616066,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958975.861915,fault_control,ドローン2,"{'original': [4.000838785332287, 4.228676697730621, 1.9147820797000867, 0], 'modified': [4.000838785332287, 4.228676697730621, 1.9147820797000867, 0], 'is_modified': False, 'drone_index': 1}"
+1763958976.091095,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958976.0909314, 'connected': True, 'packets': 12282, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958976.5706203,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958976.570428, 'connected': True, 'packets': 12396, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958976.5707412,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958976.5709436,fault_control,ドローン1,"{'original': [4.562723392143674, -11.370720562572224, 6.060939096548923, 0], 'modified': [0, 0, 0, 0], 'is_modified': True, 'drone_index': 0}"
+1763958976.571033,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958976.571126,fault_control,ドローン2,"{'original': [2.934296429686053, 5.286411273813129, 2.975693259430961, 0], 'modified': [2.934296429686053, 5.286411273813129, 2.975693259430961, 0], 'is_modified': False, 'drone_index': 1}"
+1763958976.984955,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958976.9846244, 'connected': True, 'packets': 12496, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958976.9852054,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958976.985962,fault_control,ドローン1,"{'original': [4.54442567308093, -12.345857619415206, 7.061547316056123, 0], 'modified': [0, 0, 0, 0], 'is_modified': True, 'drone_index': 0}"
+1763958976.9863076,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958976.9866326,fault_control,ドローン2,"{'original': [1.9018262965328405, 4.267433025937045, 5.057307175932239, 0], 'modified': [1.9018262965328405, 4.267433025937045, 5.057307175932239, 0], 'is_modified': False, 'drone_index': 1}"
+1763958977.0924838,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958977.0923207, 'connected': True, 'packets': 12522, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958977.1981177,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958977.1978972, 'connected': True, 'packets': 12548, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958977.1982594,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958977.1987038,fault_control,ドローン1,"{'original': [4.535763329243197, -13.306027003875519, 7.03423769382883, 0], 'modified': [0, 0, 0, 0], 'is_modified': True, 'drone_index': 0}"
+1763958977.2993968,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958977.2998843,fault_control,ドローン2,"{'original': [0.9144265774368319, 4.249690129906167, 6.03556295995054, 0], 'modified': [0.9144265774368319, 4.249690129906167, 6.03556295995054, 0], 'is_modified': False, 'drone_index': 1}"
+1763958977.4790213,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958977.4788082, 'connected': True, 'packets': 12614, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958977.4791663,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958977.4795663,fault_control,ドローン1,"{'original': [4.543056131258766, -13.280998259410604, 7.009098646367338, 0], 'modified': [0, 0, 0, 0], 'is_modified': True, 'drone_index': 0}"
+1763958977.5807264,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958977.5811865,fault_control,ドローン2,"{'original': [0.9415499010601364, 4.237292344734141, 5.999765922916345, 0], 'modified': [0.9415499010601364, 4.237292344734141, 5.999765922916345, 0], 'is_modified': False, 'drone_index': 1}"
+1763958977.8023453,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958977.802117, 'connected': True, 'packets': 12692, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958977.8024929,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958977.8029122,fault_control,ドローン1,"{'original': [5.562986612947333, -12.232733183987541, 5.993556072510703, 0], 'modified': [0, 0, 0, 0], 'is_modified': True, 'drone_index': 0}"
+1763958977.9033945,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958977.9035332,fault_control,ドローン2,"{'original': [1.9936919987624502, 3.2304858938947523, 4.982200062362079, 0], 'modified': [1.9936919987624502, 3.2304858938947523, 4.982200062362079, 0], 'is_modified': False, 'drone_index': 1}"
+1763958978.093811,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958978.0936053, 'connected': True, 'packets': 12762, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958978.228986,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958978.2287595, 'connected': True, 'packets': 12794, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958978.2291293,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958978.229562,fault_control,ドローン1,"{'original': [6.5673926580716815, -11.177002314891697, 5.992601963936515, 0], 'modified': [0, 0, 0, 0], 'is_modified': True, 'drone_index': 0}"
+1763958978.229857,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958978.2304807,fault_control,ドローン2,"{'original': [3.057023143743742, 4.236212091925597, 3.936998515155233, 0], 'modified': [3.057023143743742, 4.236212091925597, 3.936998515155233, 0], 'is_modified': False, 'drone_index': 1}"
+1763958978.7642696,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958978.764052, 'connected': True, 'packets': 12924, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958978.7644124,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958978.7648244,fault_control,ドローン1,"{'original': [6.5165288368990915, -9.104514698435748, 6.046433348375329, 0], 'modified': [0, 0, 0, 0], 'is_modified': True, 'drone_index': 0}"
+1763958978.76511,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958978.7654035,fault_control,ドローン2,"{'original': [5.074782009713432, 3.1740713737257886, 2.9123137410957565, 0], 'modified': [5.074782009713432, 3.1740713737257886, 2.9123137410957565, 0], 'is_modified': False, 'drone_index': 1}"
+1763958979.0953426,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958979.0951283, 'connected': True, 'packets': 13002, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958979.1777492,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958979.175401, 'connected': True, 'packets': 13022, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958979.1778903,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958979.178292,fault_control,ドローン1,"{'original': [6.501019132550981, -8.087032821848954, 7.091998183404734, 0], 'modified': [0, 0, 0, 0], 'is_modified': True, 'drone_index': 0}"
+1763958979.1785483,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958979.1788387,fault_control,ドローン2,"{'original': [5.02528764796781, 1.069234136398094, 2.8887481157922434, 0], 'modified': [5.02528764796781, 1.069234136398094, 2.8887481157922434, 0], 'is_modified': False, 'drone_index': 1}"
+1763958979.488016,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958979.4876587, 'connected': True, 'packets': 13096, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958979.4882843,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958979.4902244,fault_control,ドローン1,"{'original': [6.491381469902821, -8.087980683766295, 7.079251308344403, 0], 'modified': [0, 0, 0, 0], 'is_modified': True, 'drone_index': 0}"
+1763958979.5938063,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958979.5942466,fault_control,ドローン2,"{'original': [5.002195024654351, 0.07436034788353951, 1.8865823288245107, 0], 'modified': [5.002195024654351, 0.07436034788353951, 1.8865823288245107, 0], 'is_modified': False, 'drone_index': 1}"
+1763958979.766448,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958979.7660966, 'connected': True, 'packets': 13164, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958979.7666228,mocap_counter_reset,ドローン1,{'position_missing_count': 0}
+1763958979.7671397,fault_control,ドローン1,"{'original': [6.507538229349979, -8.112542860544469, 7.079932757944643, 0], 'modified': [0, 0, 0, 0], 'is_modified': True, 'drone_index': 0}"
+1763958979.9681923,mocap_counter_reset,ドローン2,{'position_missing_count': 0}
+1763958979.968876,fault_control,ドローン2,"{'original': [3.9768533206850534, 0.09791746649045859, 1.8965115380133124, 0], 'modified': [3.9768533206850534, 0.09791746649045859, 1.8965115380133124, 0], 'is_modified': False, 'drone_index': 1}"
+1763958980.0972562,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958980.0970073, 'connected': True, 'packets': 13244, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958981.076776,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958981.0764153, 'connected': True, 'packets': 13478, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958981.097756,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958981.0975869, 'connected': True, 'packets': 13484, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958981.2887669,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958981.2881541, 'connected': True, 'packets': 13528, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958981.4947762,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958981.4945424, 'connected': True, 'packets': 13578, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958981.6988413,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958981.6986744, 'connected': True, 'packets': 13628, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958982.0991192,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958982.0989957, 'connected': True, 'packets': 13724, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958982.1525545,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958982.1523712, 'connected': True, 'packets': 13736, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958982.3639503,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958982.363749, 'connected': True, 'packets': 13788, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958982.4663703,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958982.4662354, 'connected': True, 'packets': 13812, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958982.7000098,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958982.6998696, 'connected': True, 'packets': 13868, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958982.9038339,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958982.9036403, 'connected': True, 'packets': 13916, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958983.1006033,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958983.1003604, 'connected': True, 'packets': 13964, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958983.1104727,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958983.1102402, 'connected': True, 'packets': 13966, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958983.3179858,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958983.3178277, 'connected': True, 'packets': 14016, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958983.48566,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958983.485406, 'connected': True, 'packets': 14056, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958983.7201235,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958983.7199082, 'connected': True, 'packets': 14112, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958983.8977227,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958983.8975346, 'connected': True, 'packets': 14156, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958984.101747,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958984.1015797, 'connected': True, 'packets': 14204, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958984.128471,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958984.1281958, 'connected': True, 'packets': 14210, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958984.3339622,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958984.333793, 'connected': True, 'packets': 14260, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958984.507317,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958984.5070956, 'connected': True, 'packets': 14302, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958984.698528,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958984.6981509, 'connected': True, 'packets': 14348, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958984.9030678,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958984.9028747, 'connected': True, 'packets': 14396, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958985.0677872,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958985.0675626, 'connected': True, 'packets': 14436, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958985.1031106,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958985.1029751, 'connected': True, 'packets': 14444, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958985.3015969,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958985.301413, 'connected': True, 'packets': 14492, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958985.4774308,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958985.4771454, 'connected': True, 'packets': 14534, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958985.6925542,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958985.692278, 'connected': True, 'packets': 14586, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958985.9155319,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958985.9154458, 'connected': True, 'packets': 14640, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958986.1045527,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958986.1043549, 'connected': True, 'packets': 14684, 'tracked_ids': 2, 'ids': '[1, 2]'}"
+1763958986.219001,mocap_quality,MOCAP接続診断,"{'timestamp': 1763958986.2188108, 'connected': True, 'packets': 14712, 'tracked_ids': 2, 'ids': '[1, 2]'}"
