@@ -1,0 +1,2 @@
+timestamp,drone_id,pitch,roll,yaw,vgx,vgy,vgz,templ,temph,tof,h,bat,baro,time,agx,agy,agz
+1758160910.5048225,1,0.0,0.0,0.0,0.0,0.0,0.0,69.0,71.0,10.0,0.0,89.0,92.29,0.0,5.0,-6.0,-998.0

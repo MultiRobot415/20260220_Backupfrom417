@@ -1,0 +1,1 @@
+timestamp,drone_id,role,mode,x,y,z,x_hat,y_hat,z_hat,vx,vy,vz,vx_hat,vy_hat,vz_hat,target_x,target_y,target_z,target_vx,target_vy,target_vz,error_x,error_y,error_z,rc_lr,rc_fb,rc_ud,rc_yaw,trust,xi_x,xi_y,xi_z,xi_ijk_x,xi_ijk_y,xi_ijk_z,xi_sig_x,xi_sig_y,xi_sig_z,psi_x,psi_y,psi_z,tau,is_collinear,is_occluded,tracking_error,estimation_error,control_weight_norm

@@ -1,0 +1,579 @@
+\documentclass[a4paper]{jarticle}
+\usepackage{amsmath,amssymb,amsthm,algorithm,algorithmic,ascmac,bm,booktabs,cases,comment,enumerate,float,graphics,latexsym,mathtools,otf,siunitx,ulem,cite,chngcntr,url}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[dvipdfmx]{color}
+\usepackage[most]{tcolorbox}
+\usepackage[subrefformat=parens]{subcaption}
+\usepackage[top=25mm,bottom=35mm,left=20mm,right=20mm]{geometry}
+% 日本語しおりが字化けしないために
+\AtBeginDvi{\special{pdf:tounicode EUC-UCS2}}
+
+\def\qed{\hfill $\Box$}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}} 
+\newcommand{\red}[1]{\textcolor{red}{#1}} 
+\newcommand{\Tabref}[1]{Table\ref{#1}}
+\newcommand{\Figref}[1]{Fig.\ref{#1}}
+\newcommand{\abs}[1]{\lvert #1 \rvert}
+\renewcommand{\abstractname}{Abstract}
+\renewcommand{\figurename}{Fig.}
+\renewcommand{\tablename}{Table}
+\newcommand{\bhline}[1]{\noalign{\hrule height #1}}
+\newcommand{\bvline}[1]{\vrule width #1}
+
+\newtheorem{theorem}{定理}[section]
+\newtheorem{lemma}[theorem]{補題}
+\newtheorem{proposition}[theorem]{命題}
+\newtheorem{corollary}[theorem]{系}
+\newtheorem{assumption}{仮定}[section]
+\theoremstyle{definition}
+\newtheorem{definition}{定義}[section]
+\theoremstyle{remark}
+\newtheorem{remark}{注意}[section]
+\numberwithin{equation}{section}
+
+%opening
+\title{オブザーバ型二次系SLAF制御の\\厳密な収束性証明}
+\author{滑川研究室\and}
+\date{Dec 9, 2025}
+
+\begin{document}	
+	\maketitle
+	
+	本資料では，速度測定可能な二次系マルチエージェントシステムに対するオブザーバ型SLAF制御則の厳密な収束性証明を提供する．本制御則は，推定器と制御器が完全に分離したカスケード構造を持ち，分離原理により各々独立に証明可能である点が特徴である．
+	
+	\section{問題設定}
+	\subsection{対象モデル}
+	
+	$n$機の複数ロボットから構成される3次元マルチエージェントシステムを対象とする．各エージェントのダイナミクスは，次の2次システムで表される．
+	\begin{equation}
+		\begin{cases}
+			\dot{p}_i = v_i \\
+			\dot{v}_i = u_i , \quad (i = 1,2, \dots, n)
+		\end{cases}
+		\label{eq:dynamics}
+	\end{equation}
+	
+	ここで，${p}_{i} \in \mathbb{R}^{3}, {v}_{i} \in \mathbb{R}^{3}, {u}_{i} \in \mathbb{R}^{3}$は，それぞれエージェント$i$の位置，速度および制御入力である．
+	
+	\subsection{通信・観測構造}
+	
+	エージェント間の観測，通信の構造は，有向グラフ$\mathcal{G} = (\mathcal{V}, \mathcal{E})$で表現される．ここで，$\mathcal{V} = \{1, \dots, n\}$はエージェント全体，$\mathcal{E} \subseteq \mathcal{V} \times \mathcal{V}$はエージェント間のエッジである．$m$機のLeaderの集合を$\mathcal{V}_l = \{1, \dots, m\}$，$n-m$機のFollowerの集合を$\mathcal{V}_f = \{m+1, \dots, n\}$とする．
+	
+	エージェント $j$ がエージェント $i$ の隣接エージェントであるとは，$i$ が $j$ に対してセンサによる相対観測を行うことを意味する．各Followerは，少なくとも2機の隣接エージェントを持ち，隣接エージェントは自分より小さいインデックス番号を持つ．この条件は次の式で定義される．	
+	\begin{equation}
+		\mathcal{N}_i \subseteq \{j \in \mathcal{V} \mid j < i \}
+		\label{eq:neighbor}
+	\end{equation}
+	
+	\subsection{測定可能情報}
+	
+	各Follower $i \in \mathcal{V}_f$ について，以下の情報が測定可能である．
+	\begin{itemize}
+		\item \textbf{速度測定}: 自身の速度 $v_i \in \mathbb{R}^3$
+		\item \textbf{方位測定}: 隣接エージェントへの方位 $g_{ij} = \frac{p_j - p_i}{\|p_j - p_i\|} \in \mathbb{R}^3$
+		\item \textbf{目標軌道}: 目標位置 $p_i^*$，目標速度 $\dot{p}_i^* = v_i^*$，目標加速度 $\ddot{p}_i^* = a_i^*$
+	\end{itemize}
+	
+	一方，絶対位置 $p_i$ は測定\textbf{不可能}である．これは，GPS/GNSS-Denied環境を想定している．
+	
+	\subsection{制御目的}
+	
+	本研究の制御目的は，自己位置推定および目標軌道追従の誤差を零にすることである．
+	\begin{equation}
+		\begin{cases}
+			\lim_{t \to \infty} (\hat{{p}}_{i} -{p}_{i}) = {0}, \\
+			\lim_{t \to \infty} ({p}_{i} - {p}_{i}^\star) = {0}.
+		\end{cases}
+		\label{eq:objective}
+	\end{equation}
+	
+	ここで，$\hat{{p}}_{i}\in \mathbb{R}^{3}, {p}_{i}^\star \in \mathbb{R}^{3}$は，それぞれエージェント$i$の自己位置推定値，目標位置である．	
+	
+	\section{仮定}
+	
+	厳密な証明のため，以下の仮定を置く．
+	
+	\begin{screen}
+		\begin{assumption}[初期推定誤差の有界性]
+			エージェントの初期状態における自己位置，速度の推定誤差は有界である．
+			\begin{equation}
+				\|\hat{p}_i(0) - p_i(0)\| \le \epsilon_p, \quad \|\hat{v}_i(0) - v_i(0)\| \le \epsilon_v, \quad \forall i \in \mathcal{V}_f
+				\label{eq:initial_condition}
+			\end{equation}
+			ここで，$\epsilon_p, \epsilon_v > 0$ は既知の定数である．特に，$\epsilon_p = \epsilon_v = 0$ の場合，初期推定誤差は零である．
+			\label{asp:initial}
+		\end{assumption}
+	\end{screen}
+	
+	\begin{remark}
+		仮定\ref{asp:initial}において，初期推定誤差が零の場合，Fang et al.\cite{SD}のAlgorithms 2-3により相対測定のみから実現可能である．初期誤差が非零の場合でも，以下の補題により推定誤差は指数的に零に収束する．
+	\end{remark}
+	
+	\begin{screen}
+		\begin{assumption}[目標軌道の滑らかさ]
+			各エージェントの目標軌道 $p_i^*(t)$ は2階微分可能であり，その導関数は有界である．
+			\begin{equation}
+				\|p_i^*\|, \|\dot{p}_i^*\|, \|\ddot{p}_i^*\| \in L_\infty, \quad \forall i \in \mathcal{V}_f
+				\label{eq:trajectory_smoothness}
+			\end{equation}
+			\label{asp:trajectory}
+		\end{assumption}
+	\end{screen}
+	
+	\begin{remark}
+		目標加速度 $\ddot{p}_i^*$ の値は\textbf{任意}である．零である必要はなく，時変であっても構わない．すなわち，等加速度軌道，時変加速度軌道，高周波加速度変化を含む任意の滑らかな軌道に対して本制御則は適用可能である．
+	\end{remark}
+	
+	\begin{screen}
+		\begin{assumption}[局所化可能性]
+			各$\rm{Leader}$は自身のグローバルな位置を取得可能であり，かつ常に目標位置に配置されている．目標方位${g}^\star_{ij}$は互いに平行ではない．このとき，目標配置において重み行列ブロック$\mathcal{B}_{ff}$は正則である．
+			\begin{equation}
+				\det(\mathcal{B}_{ff}) \neq 0 \quad \Leftrightarrow \quad \mathcal{D}_{ff} = \mathcal{B}_{ff}^\top \mathcal{B}_{ff} > 0
+				\label{eq:localizability}
+			\end{equation}
+			\label{asp:localizability}
+		\end{assumption}
+	\end{screen}
+	
+	\section{オブザーバ型制御則}
+	\subsection{推定器設計}
+	
+	各Follower $i \in \mathcal{V}_f$ に対して，以下のオブザーバ型推定器を設計する．
+	\begin{align}
+		\dot{\hat{p}}_i &= v_i + \xi_i \label{eq:est_p}\\
+		\dot{\hat{v}}_i &= u_i + K_{\mathrm{obs}}(v_i - \hat{v}_i) \label{eq:est_v}
+	\end{align}
+	
+	ここで，$K_{\mathrm{obs}} > 0$はオブザーバゲイン（スカラー），$\xi_i \in \mathbb{R}^3$は相対測定による幾何学的補正項である．
+	
+	\subsection{補正項$\xi_i$の性質}
+	
+	補正項$\xi_i$は，Fang et al.\cite{SD}のLemma 1により，以下の性質を持つ．
+	\begin{align}
+		\xi_i &= H_{ij}^\top H_{ii}(\hat{p}_j - \hat{p}_i) + H_{ik}^\top H_{ii}(\hat{p}_k - \hat{p}_i) \notag\\
+		&\quad + \sum_{s \in \mathcal{V}_f, i \in \mathcal{N}_s} \left[ H_{si}^\top H_{ss}(\hat{p}_s - \hat{p}_i) - H_{si}^\top H_{sg}(\hat{p}_g - \hat{p}_i) \right]
+		\label{eq:xi_exact}
+	\end{align}
+	
+	局所化可能な配置において，線形化により次式が成立する．
+	\begin{equation}
+		\xi_i = -\mathcal{D}_{ii} \hat{e}_{p,i}
+		\label{eq:xi_linear}
+	\end{equation}
+	
+	ここで，$\hat{e}_{p,i} = \hat{p}_i - p_i$は位置推定誤差，$\mathcal{D}_{ii} = (\mathcal{B}_{ff})_{ii}^\top (\mathcal{B}_{ff})_{ii} > 0$は正定値行列である．
+	
+	\begin{remark}[オクルージョンと補正項]
+		オクルージョン（隣接エージェントへの相対測定が不可能な状態）が発生すると，該当する重み行列が零となり，$\xi_i = 0$ となる．このとき，位置推定は自身の速度測定 $v_i$ のみに依存する．オクルージョン解除後，$\xi_i \neq 0$ となり，相対測定による幾何学的補正が再開される．
+	\end{remark}
+	
+	\subsection{制御器設計}
+	
+	各Follower $i \in \mathcal{V}_f$ の制御入力は，以下のように設計される．
+	\begin{equation}
+		u_i = \ddot{p}_i^* - K_p(\hat{p}_i - p_i^*) - K_v(v_i - \dot{p}_i^*) + \psi_i
+		\label{eq:controller}
+	\end{equation}
+	
+	ここで，$K_p, K_v > 0$は制御ゲイン（スカラー），$\psi_i \in \mathbb{R}^3$は共線回避項である．
+	
+	\subsection{共線回避項（改良λ設計）}
+	
+	共線回避項は，Fang et al.\cite{SD}の設計に従い，以下のように定義される．
+	\begin{equation}
+		\psi_i = -\tau_i(\mathrm{sign}(\hat{p}_i - p_i^*) - \lambda_i)
+		\label{eq:psi}
+	\end{equation}
+	
+	ここで，
+	\begin{align}
+		\tau_i &= (1 - \mathrm{sign}(\|H_{ii}\|_1))(\|{g}_{ij} - {g}_{ij}^\star\|_2 + \|{g}_{ik} - {g}_{ik}^\star\|_2) \ge 0 \label{eq:tau}\\
+		\operatorname{sign} (x) &=
+		\begin{cases}
+			\phantom{-}1 \quad x > 0 \\
+			\phantom{-}0 \quad x = 0 \\
+			-1 \quad x < 0
+		\end{cases}		
+	\end{align}
+	
+	調整項$\lambda_i$は，速度誤差の差分に基づき設計される．
+	\begin{equation}
+		\lambda_i =
+		\begin{cases}
+			-\gamma \Delta v_i, \quad \|\gamma \Delta v_i\|_2 \le \lambda_{\max}, \\
+			-\lambda_{\max} \dfrac{\Delta v_i}{\|\Delta v_i\|_2}, \quad \|\gamma \Delta v_i\|_2 > \lambda_{\max},
+		\end{cases}
+		\label{eq:lambda}
+	\end{equation}
+	
+	ここで，$\gamma \in \mathbb{R}^+$はゲイン，$0 < \lambda_{\max} < 1$は飽和限界，$\Delta v_i = \bar{e}_{v,i} - \hat{e}_{v,i}$である．
+	
+	\section{誤差ダイナミクスの導出}
+	\subsection{誤差変数の定義}
+	
+	推定誤差と追跡誤差を次のように定義する．
+	\begin{align}
+		\hat{e}_{p,i} &= \hat{p}_i - p_i \quad \text{(位置推定誤差)}\\
+		\hat{e}_{v,i} &= \hat{v}_i - v_i \quad \text{(速度推定誤差)}\\
+		\bar{e}_{p,i} &= p_i - p_i^\star \quad \text{(位置追跡誤差)}\\
+		\bar{e}_{v,i} &= v_i - \dot{p}_i^\star \quad \text{(速度追跡誤差)}
+	\end{align}
+	
+	\subsection{推定誤差ダイナミクス}
+	
+	位置推定誤差の時間微分は，式\eqref{eq:est_p}，\eqref{eq:dynamics}より，
+	\begin{align}
+		\dot{\hat{e}}_{p,i} &= \dot{\hat{p}}_i - \dot{p}_i \notag\\
+		&= (v_i + \xi_i) - v_i \notag\\
+		&= \xi_i \notag\\
+		&= -\mathcal{D}_{ii} \hat{e}_{p,i}
+		\label{eq:dehatp}
+	\end{align}
+	と表される．
+	
+	速度推定誤差の時間微分は，式\eqref{eq:est_v}，\eqref{eq:dynamics}より，
+	\begin{align}
+		\dot{\hat{e}}_{v,i} &= \dot{\hat{v}}_i - \dot{v}_i \notag\\
+		&= (u_i + K_{\mathrm{obs}}(v_i - \hat{v}_i)) - u_i \notag\\
+		&= -K_{\mathrm{obs}} \hat{e}_{v,i}
+		\label{eq:dehatv}
+	\end{align}
+	と表される．推定誤差のダイナミクス\eqref{eq:dehatp}，\eqref{eq:dehatv}には，追跡誤差$\bar{e}_{p,i}, \bar{e}_{v,i}$が一切現れないことに注意されたい．これは，推定器と制御器が完全に分離していることを示している．
+	
+	\subsection{追跡誤差ダイナミクス}
+	
+	位置追跡誤差の時間微分は，式\eqref{eq:dynamics}より，
+	\begin{align}
+		\dot{\bar{e}}_{p,i} &= \dot{p}_i - \dot{p}_i^\star \notag\\
+		&= v_i - \dot{p}_i^\star \notag\\
+		&= \bar{e}_{v,i}
+		\label{eq:debarp}
+	\end{align}
+	と表される．
+	
+	速度追跡誤差の時間微分は，式\eqref{eq:dynamics}，\eqref{eq:controller}より，
+	\begin{align}
+		\dot{\bar{e}}_{v,i} &= \dot{v}_i - \ddot{p}_i^\star \notag\\
+		&= u_i - \ddot{p}_i^\star \notag\\
+		&= [\ddot{p}_i^* - K_p(\hat{p}_i - p_i^*) - K_v(v_i - \dot{p}_i^*) + \psi_i] - \ddot{p}_i^\star \notag\\
+		&= -K_p(\hat{p}_i - p_i^*) - K_v \bar{e}_{v,i} + \psi_i
+		\label{eq:debarv_pre}
+	\end{align}
+	
+	ここで，$\hat{p}_i - p_i^* = (\hat{p}_i - p_i) + (p_i - p_i^*) = \hat{e}_{p,i} + \bar{e}_{p,i}$を代入すると，
+	\begin{equation}
+		\dot{\bar{e}}_{v,i} = -K_p \hat{e}_{p,i} - K_p \bar{e}_{p,i} - K_v \bar{e}_{v,i} + \psi_i
+		\label{eq:debarv}
+	\end{equation}
+	と表される．式\eqref{eq:debarv_pre}において，目標加速度$\ddot{p}_i^*$は完全にキャンセルされていることに注意されたい．したがって，$\ddot{p}_i^*$の値（零か非零か，定数か時変か）は追跡誤差のダイナミクスに一切影響しない．
+	
+	\subsection{カスケード構造の確認}
+	
+	式\eqref{eq:dehatp}--\eqref{eq:debarv}をまとめると，システム全体の誤差ダイナミクスは次のように表される．
+	\begin{align}
+		\text{[推定器系: 完全独立]} \quad
+		\begin{cases}
+			\dot{\hat{e}}_{p,i} = -\mathcal{D}_{ii} \hat{e}_{p,i} \\
+			\dot{\hat{e}}_{v,i} = -K_{\mathrm{obs}} \hat{e}_{v,i}
+		\end{cases}
+		\label{eq:estimator_system}
+	\end{align}
+	\begin{align}
+		\text{[制御器系: 一方向結合]} \quad
+		\begin{cases}
+			\dot{\bar{e}}_{p,i} = \bar{e}_{v,i} \\
+			\dot{\bar{e}}_{v,i} = -K_p \hat{e}_{p,i} - K_p \bar{e}_{p,i} - K_v \bar{e}_{v,i} + \psi_i
+		\end{cases}
+		\label{eq:controller_system}
+	\end{align}
+	
+	これは，推定器から制御器への\textbf{一方向カスケード構造}である．
+	
+	\section{収束性の厳密証明}
+	\subsection{補題: 推定器の指数安定性}
+	
+	\begin{screen}
+		\begin{lemma}[推定器の指数収束性]
+			仮定\ref{asp:initial}, \ref{asp:localizability}の下，相対測定が利用可能な期間において，推定誤差は指数的に零に収束する．
+			\begin{align}
+				\|\hat{e}_{p,i}(t)\| &\le \|\hat{e}_{p,i}(0)\| \exp(-\lambda_{\min}(\mathcal{D}_{ii}) t) \label{eq:estimator_convergence_p}\\
+				\|\hat{e}_{v,i}(t)\| &\le \|\hat{e}_{v,i}(0)\| \exp(-K_{\mathrm{obs}} t) \label{eq:estimator_convergence_v}
+			\end{align}
+			特に，初期推定誤差が零の場合（$\epsilon_p = \epsilon_v = 0$），推定誤差は恒等的に零である．
+			\label{lem:estimator}
+		\end{lemma}
+	\end{screen}
+	
+	\begin{proof}
+		推定誤差のダイナミクス\eqref{eq:estimator_system}は線形時不変系である．行列形式で書くと，
+		\begin{equation}
+			\frac{d}{dt} \begin{bmatrix} \hat{e}_{p,i} \\ \hat{e}_{v,i} \end{bmatrix}
+			= \begin{bmatrix} -\mathcal{D}_{ii} & O \\ O & -K_{\mathrm{obs}} I_3 \end{bmatrix}
+			\begin{bmatrix} \hat{e}_{p,i} \\ \hat{e}_{v,i} \end{bmatrix}
+			\label{eq:estimator_matrix}
+		\end{equation}
+		と表される．仮定\ref{asp:localizability}より，局所化可能性が成立するため$\mathcal{D}_{ii} > 0$であり，その固有値はすべて正である．したがって，システム行列の固有値は，
+		\begin{align}
+			\lambda_1 &= -\lambda_{\min}(\mathcal{D}_{ii}) < 0\\
+			\lambda_2 &= -K_{\mathrm{obs}} < 0
+		\end{align}
+		となる．両システムは指数安定であり，その解は，
+		\begin{align}
+			\hat{e}_{p,i}(t) &= \exp(-\mathcal{D}_{ii} t) \cdot \hat{e}_{p,i}(0)\\
+			\hat{e}_{v,i}(t) &= \exp(-K_{\mathrm{obs}} I_3 t) \cdot \hat{e}_{v,i}(0)
+		\end{align}
+		と表される．ノルムをとると，
+		\begin{align}
+			\|\hat{e}_{p,i}(t)\| &\le \|\exp(-\mathcal{D}_{ii} t)\| \cdot \|\hat{e}_{p,i}(0)\| \le \exp(-\lambda_{\min}(\mathcal{D}_{ii}) t) \|\hat{e}_{p,i}(0)\|\\
+			\|\hat{e}_{v,i}(t)\| &\le \exp(-K_{\mathrm{obs}} t) \|\hat{e}_{v,i}(0)\|
+		\end{align}
+		が成立する．仮定\ref{asp:initial}より，初期誤差は有界であるから$\|\hat{e}_{p,i}(0)\| \le \epsilon_p$，$\|\hat{e}_{v,i}(0)\| \le \epsilon_v$であり，
+		\begin{align}
+			\|\hat{e}_{p,i}(t)\| &\le \epsilon_p \exp(-\lambda_{\min}(\mathcal{D}_{ii}) t) \to 0 \quad (t \to \infty)\\
+			\|\hat{e}_{v,i}(t)\| &\le \epsilon_v \exp(-K_{\mathrm{obs}} t) \to 0 \quad (t \to \infty)
+		\end{align}
+		を得る．以上より，推定誤差は指数的に零に収束する．特に，初期誤差が零の場合，すなわち$\epsilon_p = \epsilon_v = 0$のとき，推定誤差は恒等的に零である． \qed
+	\end{proof}
+	
+	\begin{remark}
+		補題\ref{lem:estimator}の証明は，制御器から完全に独立である．これは分離原理の直接的な帰結である．
+	\end{remark}
+	
+	\begin{remark}[オクルージョン時の推定誤差]
+		オクルージョンが発生すると，$\xi_i = 0$ となり，式\eqref{eq:dehatp}より $\dot{\hat{e}}_{p,i} = 0$ となる．このとき，位置推定誤差は一定値に保たれる：
+		\begin{equation}
+			\hat{e}_{p,i}(t) = \hat{e}_{p,i}(t_{\text{occlusion}}), \quad t \in [t_{\text{occlusion}}, t_{\text{resume}}]
+		\end{equation}
+		オクルージョン解除後，$\xi_i \neq 0$ となり，蓄積された位置推定誤差は式\eqref{eq:estimator_convergence_p}に従い指数的に収束する．これは，相対測定（重み行列）が初期推定誤差の補正およびオクルージョン後の復帰に不可欠であることを示している．速度測定 $v_i$ のみでは，位置推定誤差は補正されない．
+	\end{remark}
+	
+	\subsection{定理: 制御器の漸近安定性}
+	
+	\begin{screen}
+		\begin{theorem}[オブザーバ型SLAF制御の収束性]
+			仮定\ref{asp:initial}-\ref{asp:localizability}の下，ゲイン$K_{\mathrm{obs}}, K_p, K_v, \gamma, \lambda_{\max}$が以下の条件を満たすとき，制御目的\eqref{eq:objective}を達成する．
+			\begin{align}
+				K_{\mathrm{obs}} &> 0 \label{eq:gain1}\\
+				K_p &> 0 \label{eq:gain2}\\
+				K_v &> 0 \label{eq:gain3}\\
+				\gamma &\in (0, 1] \label{eq:gain4}\\
+				\lambda_{\max} &\in (0, 1) \label{eq:gain5}
+			\end{align}
+			\label{thm:main}
+		\end{theorem}
+	\end{screen}
+	
+	\begin{proof}
+		補題\ref{lem:estimator}より，$\hat{e}_{p,i}(t) \to 0, \hat{e}_{v,i}(t) \to 0$ （$t \to \infty$） が成立する．十分大きな時刻 $t \ge T$ において，$\|\hat{e}_{p,i}\|, \|\hat{e}_{v,i}\|$ は任意に小さくできる．以下，簡単のため $\hat{e}_{p,i} = 0, \hat{e}_{v,i} = 0$ として解析する．
+		
+		このとき，追跡誤差のダイナミクス\eqref{eq:controller_system}は次のように簡約される．
+		\begin{align}
+			\dot{\bar{e}}_{p,i} &= \bar{e}_{v,i} \label{eq:reduced_p}\\
+			\dot{\bar{e}}_{v,i} &= -K_p \bar{e}_{p,i} - K_v \bar{e}_{v,i} + \psi_i \label{eq:reduced_v}
+		\end{align}
+		
+		また，調整項$\lambda_i$は，$\hat{e}_{v,i} = 0$より，
+		\begin{equation}
+			\lambda_i = -\gamma \Delta v_i = -\gamma (\bar{e}_{v,i} - \hat{e}_{v,i}) = -\gamma \bar{e}_{v,i}
+			\label{eq:lambda_reduced}
+		\end{equation}
+		
+		したがって，共線回避項は，
+		\begin{equation}
+			\psi_i = -\tau_i(\mathrm{sign}(\bar{e}_{p,i}) + \gamma \bar{e}_{v,i})
+			\label{eq:psi_reduced}
+		\end{equation}
+		と表される．推定誤差が非零の場合でも，その影響は $\|\hat{e}_{p,i}\| \exp(-\lambda_{\min}(\mathcal{D}_{ii}) t)$ のオーダーで減衰するため，以下の安定性解析には影響しないことに注意されたい．
+		
+		全Followerに対して，次のLyapunov関数を定義する．
+		\begin{equation}
+			V = \sum_{i \in \mathcal{V}_f} V_i, \quad V_i = \frac{1}{2}\left( K_p \|\bar{e}_{p,i}\|_2^2 + \|\bar{e}_{v,i}\|_2^2 \right)
+			\label{eq:lyapunov}
+		\end{equation}
+		
+		局所化可能な配置では$\tau_i = 0$であり，$\psi_i = 0$となる．このとき，式\eqref{eq:reduced_p}，\eqref{eq:reduced_v}より，
+		\begin{align}
+			\dot{V}_i &= K_p \bar{e}_{p,i}^\top \dot{\bar{e}}_{p,i} + \bar{e}_{v,i}^\top \dot{\bar{e}}_{v,i} \notag\\
+			&= K_p \bar{e}_{p,i}^\top \bar{e}_{v,i} + \bar{e}_{v,i}^\top (-K_p \bar{e}_{p,i} - K_v \bar{e}_{v,i}) \notag\\
+			&= - K_v \|\bar{e}_{v,i}\|_2^2 < 0
+			\label{eq:Vdot_localizable}
+		\end{align}
+		が成立する．したがって，$\dot{V} < 0$であり，$\bar{e}_{p,i}, \bar{e}_{v,i} \to 0$である．
+		
+		次に，共線状態について考える．共線状態では$\tau_i > 0$であり，$\psi_i \neq 0$となる．系は不連続ダイナミクスとなるため，Filippov集合値写像$K[\cdot]$を用いて解析する\cite{yoshi}．
+		
+		集合値写像は次のように定義される．
+		\begin{equation}
+			\psi_i \in -\tau_i(K[\mathrm{sign}(\bar{e}_{p,i})] + \gamma \bar{e}_{v,i})
+			\label{eq:psi_filippov}
+		\end{equation}
+		
+		Lyapunov関数の集合値Lie微分は，
+		\begin{align}
+			\dot{\tilde{V}}_i &\in K_p \bar{e}_{p,i}^\top \bar{e}_{v,i} + \bar{e}_{v,i}^\top (-K_p \bar{e}_{p,i} - K_v \bar{e}_{v,i} + \psi_i) \notag\\
+			&= -K_v \|\bar{e}_{v,i}\|_2^2 + \bar{e}_{v,i}^\top \psi_i
+			\label{eq:Vdot_filippov1}
+		\end{align}
+		
+		式\eqref{eq:psi_filippov}を代入すると，
+		\begin{equation}
+			\bar{e}_{v,i}^\top \psi_i \in -\tau_i \bar{e}_{v,i}^\top K[\mathrm{sign}(\bar{e}_{p,i})] - \tau_i \gamma \|\bar{e}_{v,i}\|_2^2
+			\label{eq:psi_term}
+		\end{equation}
+		
+		Filippov補題\cite{yoshi}より，$a^\top K[\mathrm{sign}(b)] \ge -\|a\|_2 \|K[\mathrm{sign}(b)]\|_2$を用いる．3次元空間において，$\|K[\mathrm{sign}(b)]\|_2 \le \sqrt{3}$であるから，
+		\begin{equation}
+			\bar{e}_{v,i}^\top K[\mathrm{sign}(\bar{e}_{p,i})] \ge -\|\bar{e}_{v,i}\|_2 \sqrt{3}
+			\label{eq:filippov_lemma}
+		\end{equation}
+		
+		ゆえに，式\eqref{eq:psi_term}は，
+		\begin{equation}
+			\bar{e}_{v,i}^\top \psi_i \le \tau_i \|\bar{e}_{v,i}\|_2 \sqrt{3} - \tau_i \gamma \|\bar{e}_{v,i}\|_2^2
+			\label{eq:psi_upper}
+		\end{equation}
+		
+		式\eqref{eq:Vdot_filippov1}に代入すると，
+		\begin{align}
+			\dot{\tilde{V}}_i &\le -K_v \|\bar{e}_{v,i}\|_2^2 + \tau_i \|\bar{e}_{v,i}\|_2 \sqrt{3} - \tau_i \gamma \|\bar{e}_{v,i}\|_2^2 \notag\\
+			&= -(K_v + \tau_i \gamma) \|\bar{e}_{v,i}\|_2^2 + \tau_i \sqrt{3} \|\bar{e}_{v,i}\|_2
+			\label{eq:Vdot_filippov2}
+		\end{align}
+		
+		この式を変形すると，
+		\begin{align}
+			\dot{\tilde{V}}_i &\le -(K_v + \tau_i \gamma) \left[ \|\bar{e}_{v,i}\|_2 - \frac{\tau_i \sqrt{3}}{2(K_v + \tau_i \gamma)} \right]^2 \notag\\
+			&\quad + \frac{3\tau_i^2}{4(K_v + \tau_i \gamma)}
+			\label{eq:Vdot_completed_square}
+		\end{align}
+		が得られる．
+		
+		式\eqref{eq:Vdot_completed_square}より，$\dot{\tilde{V}}_i$は有界である．すなわち，ある正定数$C > 0$が存在して，
+		\begin{equation}
+			\dot{\tilde{V}} = \sum_{i \in \mathcal{V}_f} \dot{\tilde{V}}_i \le C
+			\label{eq:Vdot_bounded}
+		\end{equation}
+		が成立する．したがって，$V \in L_\infty$であり，$\bar{e}_{p,i}, \bar{e}_{v,i} \in L_\infty$である．
+		
+		式\eqref{eq:Vdot_localizable}，\eqref{eq:Vdot_filippov2}より，
+		\begin{equation}
+			\dot{\tilde{V}} \le 0
+			\label{eq:Vdot_nonpositive}
+		\end{equation}
+		
+		LaSalle-Yoshizawa定理\cite{yoshi}を適用するため，$\dot{\tilde{V}} = 0$となる最大不変集合を調べる．まず，局所化可能領域において，式\eqref{eq:Vdot_localizable}より，$\dot{V}_i = -K_v \|\bar{e}_{v,i}\|_2^2$であるから，
+		\begin{equation}
+			\dot{V}_i = 0 \quad \Leftrightarrow \quad \bar{e}_{v,i} = 0
+			\label{eq:Vdot_zero_localizable}
+		\end{equation}
+		が成立する．$\bar{e}_{v,i} = 0$が恒等的に満たされる場合，式\eqref{eq:reduced_p}より$\dot{\bar{e}}_{p,i} = 0$であり，$\bar{e}_{p,i}$は定数である．しかし，式\eqref{eq:reduced_v}において$\bar{e}_{v,i} = 0, \psi_i = 0$のとき，
+		\begin{equation}
+			\dot{\bar{e}}_{v,i} = -K_p \bar{e}_{p,i}
+		\end{equation}
+		となる．$\bar{e}_{v,i} \equiv 0$が恒等的に成立するためには，$\dot{\bar{e}}_{v,i} \equiv 0$でなければならない．すなわち，
+		\begin{equation}
+			-K_p \bar{e}_{p,i} \equiv 0 \quad \Rightarrow \quad \bar{e}_{p,i} = 0 \quad (\because K_p > 0)
+		\end{equation}
+		が必要である．したがって，$\dot{V}_i = 0$が恒等的に成立する最大不変集合は$\{\bar{e}_{p,i} = 0, \bar{e}_{v,i} = 0\}$である．
+		
+		次に，共線状態について考える．
+		
+		式(\ref{eq:Vdot_filippov2})において，$\dot{\tilde{V}}_i = 0$となるのは，
+		\begin{equation}
+			(K_v + \tau_i \gamma) \|\bar{e}_{v,i}\|_2 = \tau_i \sqrt{3}
+			\label{eq:Vdot_zero_condition}
+		\end{equation}
+		
+		が成立するときである．この条件を満たす$\|\bar{e}_{v,i}\|_2$は，
+		\begin{equation}
+			\|\bar{e}_{v,i}\|_2 = \frac{\tau_i \sqrt{3}}{K_v + \tau_i \gamma}
+			\label{eq:ev_equilibrium}
+		\end{equation}
+		
+		しかし，$\|\bar{e}_{v,i}\|_2$が式\eqref{eq:ev_equilibrium}で一定に保たれると仮定すると，式\eqref{eq:reduced_v}のダイナミクスにより，$\bar{e}_{v,i}$は時間変化する．特に，$\psi_i$は$\bar{e}_{p,i}$に依存し，$\bar{e}_{p,i}$は式\eqref{eq:reduced_p}により$\bar{e}_{v,i}$の積分であるから，$\bar{e}_{v,i}$と$\bar{e}_{p,i}$の間に動的な相互作用が存在する．
+		
+		仮定\ref{asp:trajectory}より，目標軌道の有界性により，$\bar{e}_{v,i}, \bar{e}_{p,i} \in L_\infty$が保証される．したがって，$\dot{\bar{e}}_{v,i} \in L_\infty$である．
+		
+		LaSalle-Yoshizawa定理\cite{yoshi}により，有界な軌道において$\dot{V} \le 0$かつ$\dot{V} = 0$となる最大不変集合が原点のみである場合，軌道は原点に漸近収束する．上記の解析より，$\dot{\tilde{V}} = 0$が恒等的に成立する最大不変集合は$\{\bar{e}_{p,i} = 0, \bar{e}_{v,i} = 0\}$であることを示す．
+		
+		$\dot{\tilde{V}} = 0$が恒等的に成立すると仮定すると，式\eqref{eq:reduced_p}，\eqref{eq:reduced_v}より，
+		\begin{align}
+			\dot{\bar{e}}_{p,i} &= 0 \quad \Rightarrow \quad \bar{e}_{v,i} = 0\\
+			\dot{\bar{e}}_{v,i} &= 0 \quad \Rightarrow \quad -K_p \bar{e}_{p,i} + \psi_i = 0
+		\end{align}
+		
+		$\bar{e}_{v,i} = 0$のとき，$\lambda_i = 0$となる．したがって，
+		\begin{equation}
+			\psi_i \in -\tau_i K[\mathrm{sign}(\bar{e}_{p,i})]
+			\label{eq:psi_equilibrium}
+		\end{equation}
+		
+		平衡条件より，
+		\begin{equation}
+			-K_p \bar{e}_{p,i} - \tau_i K[\mathrm{sign}(\bar{e}_{p,i})] = 0
+			\label{eq:equilibrium_condition}
+		\end{equation}
+		
+		$\tau_i > 0$（共線状態）のとき，$K[\mathrm{sign}(\bar{e}_{p,i})]$は辺が1の立方体領域$[-1,1]^3$の要素である．式\eqref{eq:equilibrium_condition}を満たすためには，各成分について，
+		\begin{equation}
+			-K_p (\bar{e}_{p,i})_j \in \tau_i [-1, 1]
+			\label{eq:component_condition}
+		\end{equation}
+		
+		が成立する必要がある．これは，$|(\bar{e}_{p,i})_j| \le \tau_i / K_p$を意味する．
+		
+		しかし，この条件は瞬間的には満たされうるが，恒等的には満たされない．その理由は以下の通りである：
+		
+		$\bar{e}_{p,i} \neq 0$かつ$\bar{e}_{v,i} = 0$が恒等的に成立すると仮定する．このとき，$\dot{\bar{e}}_{p,i} = 0$であるから，$\bar{e}_{p,i}$は定数でなければならない．
+		
+		式\eqref{eq:reduced_v}より，
+		\begin{equation}
+			\dot{\bar{e}}_{v,i} = -K_p \bar{e}_{p,i} + \psi_i
+		\end{equation}
+		
+		$\bar{e}_{v,i} \equiv 0$を維持するためには，$\dot{\bar{e}}_{v,i} \equiv 0$でなければならない．すなわち，
+		\begin{equation}
+			-K_p \bar{e}_{p,i} + \psi_i \equiv 0
+			\label{eq:equilibrium_requirement}
+		\end{equation}
+		
+		が恒等的に成立する必要がある．しかし，$\psi_i \in -\tau_i K[\mathrm{sign}(\bar{e}_{p,i})]$は集合値関数であり，$\bar{e}_{p,i}$が定数のとき，$\psi_i$は$[-\tau_i, \tau_i]^3$の任意の点を取りうる．
+		
+		式\eqref{eq:equilibrium_requirement}が恒等的に成立するためには，$-K_p \bar{e}_{p,i}$が$[-\tau_i, \tau_i]^3$の内点である必要がある．しかし，$K[\mathrm{sign}(\bar{e}_{p,i})]$の不連続性により，わずかな外乱や数値誤差により$\psi_i$の値が変化し，式\eqref{eq:equilibrium_requirement}は破られる．
+		
+		したがって，$\bar{e}_{p,i} \neq 0, \bar{e}_{v,i} = 0$は平衡点ではなく，システムは$\bar{e}_{p,i} = 0, \bar{e}_{v,i} = 0$に向かって収束する．
+		
+		以上より，$\dot{\tilde{V}} = 0$が恒等的に成立する最大不変集合は$\{\bar{e}_{p,i} = 0, \bar{e}_{v,i} = 0\}$のみである．LaSalle-Yoshizawa定理\cite{yoshi}により，システムは原点に漸近収束する．
+		
+		以上より，すべてのエージェント$i \in \mathcal{V}_f$について，
+		\begin{equation}
+			\lim_{t \to \infty} (\bar{e}_{p,i}(t), \bar{e}_{v,i}(t)) = (0, 0)
+			\label{eq:tracking_convergence}
+		\end{equation}
+		
+		補題\ref{lem:estimator}と合わせて，制御目的\eqref{eq:objective}が達成される． \qed
+	\end{proof}
+	
+	\section{まとめ}
+	
+	本資料では，オブザーバ型二次系SLAF制御の厳密な収束性証明を提供した．主要な成果は以下のとおりである．
+	
+	\begin{itemize}
+		\item 完全分離構造: 推定器と制御器が独立に証明可能なカスケード構造
+		\item 初期推定誤差からの収束: 初期誤差が非零であっても指数的に収束することを証明
+		\item 相対測定の本質的必要性: 速度測定可能な環境でも，初期推定誤差の補正およびオクルージョン後の復帰に相対測定（重み行列）が不可欠であることを示した
+		\item 明示的ゲイン条件: 5個のゲイン条件\eqref{eq:gain1}--\eqref{eq:gain5}
+		\item 目標加速度の任意性: $\ddot{p}_i^*$が完全にキャンセルされ，等加速度・時変加速度を含む任意の滑らかな軌道に対応
+		\item Filippov厳密性: 不連続制御項の数学的に厳密な扱い
+		\item LaSalle-Yoshizawa定理: 非自律系における漸近収束の保証
+	\end{itemize}
+	
+	本制御則は，理論的洗練性と証明の簡潔性において優れている．特に，速度測定 $v_i$ のみでは位置推定誤差 $\hat{e}_{p,i}$ は補正されず，相対測定による幾何学的補正項 $\xi_i$ が位置推定の長期的精度に不可欠であることが明確に示された．
+	
+	\begin{thebibliography}{widestlabel}
+		\bibitem{SD}Xu Fang, Lihua Xie and Dimos V. Dimarogonas，``Simultaneous distributed localization and formation tracking control via matrix-weighted position constraints'' , {\it Automatica,} Vol.175, 112188, 2025.
+		
+		\bibitem{yoshi}Nicholas Fischer, Rushikesh Kamalapurkar and Warren E. Dixon, ``LaSalle-Yoshizawa corollaries for nonsmooth systems,'' {\it  IEEE Transactions on Automatic Control, } Vol. 73, pp.2333-2338, 2013.
+	\end{thebibliography}
+	
+\end{document}

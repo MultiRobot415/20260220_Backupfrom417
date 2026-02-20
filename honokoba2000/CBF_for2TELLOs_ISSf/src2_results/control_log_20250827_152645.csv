@@ -1,0 +1,1 @@
+timestamp,drone_id,role,mode,x,y,z,target_x,target_y,target_z,error_x,error_y,error_z,rc_lr,rc_fb,rc_ud,rc_yaw,trust,obs_error_x,obs_error_y,obs_error_z,obs_state_x,obs_state_y,obs_state_z,cbf_fire_flag,rc_safe_x,rc_safe_z,rc_diff_norm,qp_status,active_constraint_id,rc_nom_x,rc_nom_z,h_x,HOh_x
